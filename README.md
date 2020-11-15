@@ -6,3 +6,4 @@
 * parallel - 병령 스트림
 * mapping - 매핑
 * create_stream - 스트림 생성 방법
+* filtering - 필터링
