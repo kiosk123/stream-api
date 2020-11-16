@@ -11,3 +11,4 @@
 * matching - 매칭
 * reduce - 커스텀 집계 (리듀스)
 * collect - 필터링한 데이터 수집
+* grouping - 그룹핑
