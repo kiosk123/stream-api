@@ -19,7 +19,7 @@ public class CollectExample01 {
                 .forEach(System.out::println);;
             
             
-            //50점 미망늬 선수만 묶어서 HashSet 생성
+            //50점 미만의 선수만 묶어서 HashSet 생성
             list.stream()
                 .filter(s -> s.getScore() < 50)
                 .collect(Collectors.toCollection(HashSet::new))
