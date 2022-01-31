@@ -27,6 +27,10 @@ public class GroupingExample01 {
                              new Student("손흥민", 70, "남"),
                              new Student("이나은", 30, "여"));
         
+        /**
+         * Student의 gender로 Student 객체를 남, 여 그룹 별로 묶는다,
+         * 각 남, 여 그룹내의 Student객체에서 name 값만 가져와서 Joining 하여 "이름, 이름, ..." 형태로 값을 만든다
+         */
         Map<String, String> maps2 = list.stream().collect(Collectors.groupingBy(Student::getGender, 
                                                           Collectors.mapping(Student::getName,
                                                           Collectors.joining(", "))));
